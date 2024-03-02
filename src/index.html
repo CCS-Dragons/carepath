@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  </link>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/2eead9cc17.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+  </link>
+  <link href="globals.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./node_modules/apexcharts/dist/apexcharts.css" />
+</head>
+
+<body>
+
+
+  <nav class="bg-[#F6F3EB] border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="assets/logo.png" class="mr-3 h-6 sm:h-9" alt="Carepath Logo" />
+        <span class="self-center whitespace-nowrap text-xl font-montserrat font-semibold text-green-800">Carepath</span>
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" type="button"
+          class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-9 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button>
+        <button data-collapse-toggle="navbar-cta" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only font-montserrat">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul
+          class="font-montserrat flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#F6F3EB] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-white  rounded md:bg-transparent md:text-green-700 md:dark:text-blue-500"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-green-700 md:hover:bg-transparent md:text-black md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-green-700  md:hover:bg-transparent  md:text-black d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-green-700  md:hover:bg-transparent  md:text-black md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-md max-h-full">
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Sign in to our platform
+          </h3>
+          <button type="button"
+            class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="authentication-modal">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <div class="p-4 md:p-5">
+          <form class="space-y-4" action="#">
+            <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                username</label>
+              <input type="username" name="username" id="username"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                placeholder="healthcenterAC" required />
+            </div>
+            <div>
+              <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                password</label>
+              <input type="password" name="password" id="password" placeholder="••••••••"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                required />
+            </div>
+            <div class="flex justify-between">
+              <div class="flex items-start">
+                <div class="flex items-center h-5">
+                  <input id="remember" type="checkbox" value=""
+                    class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                    required />
+                </div>
+                <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember
+                  me</label>
+              </div>
+              <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
+            </div>
+            <button type="submit"
+              class="w-full text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login
+              to your account</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class='relative'>
+      <img src="assets/hero_banner.jpeg" class='hero_banner'></img>
+      <div class='absolute top-14 mx-auto left-0 right-0'>
+        <div class='text-7xl font-lora text-center text-zinc-800'>
+          "Securing Their Future: <span
+            class='bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent'>Infant
+          </span>
+        </div>
+        <div class='text-7xl font-lora text-center text-zinc-800'><span
+            class='bg-gradient-to-r from-green-800 to-green-950 bg-clip-text text-transparent'>Immunization
+          </span>Made Simple</div>
+        <p class='font-poppins text-center text-gray-500 tracking-wide mt-4 px-72'>With high-quality and free in-person
+          care, your little ones can get the care they need
+          whenever they need it</p>
+      </div>
+    </div>
+    <section>
+      <p class='font-lora text-4xl text-center mt-20 text-zinc-800'>In Collaboration With</p>
+      <p class='font-lora text-xl text-center text-zinc-600'></p>
+      <div class='partnership columns-5 my-16'>
+        <a data-tooltip-target="tooltip-default" href='https://www.facebook.com/angelescityinfo' target='_blank'
+          class='enlarge-on-hover'><img src="assets/partner_angeles.png" class='mx-auto max-w-28'></img></a>
+        <a data-tooltip-target="tooltip-aufconnect" href='https://www.facebook.com/aufconnect' target='_blank'
+          class='enlarge-on-hover'><img src="assets/partner_auf.png" class='mx-auto max-w-20'></img></a>
+        <a data-tooltip-target="tooltip-ccsdragons" href='https://www.facebook.com/ccsdragons' target='_blank'
+          class='enlarge-on-hover'><img src="assets/partner_college.jpeg" class='mx-auto max-w-28'></img></a>
+        <a data-tooltip-target="tooltip-conursing" href='https://www.facebook.com/aufconursing' target='_blank'
+          class='enlarge-on-hover'><img src="assets/partner_nursing.png" class='mx-auto max-w-[5.5rem]'></img></a>
+        <a data-tooltip-target="tooltip-achealth" href='https://www.facebook.com/ACHealthOffice' target='_blank'
+          class='enlarge-on-hover'><img src="assets/partner_health.png" class='mx-auto max-w-48'></img></a>
+        <div id="tooltip-default" role="tooltip"
+          class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          Angeles City Information Office
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <div id="tooltip-aufconnect" role="tooltip"
+          class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          Angeles University Foundation
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <div id="tooltip-ccsdragons" role="tooltip"
+          class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          AUF College of Computer Studies
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <div id="tooltip-conursing" role="tooltip"
+          class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          AUF College of Nursing
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <div id="tooltip-achealth" role="tooltip"
+          class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          City Health Office of Angeles City
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+
+      </div>
+    </section>
+    <section class='bg-slate-100 py-32'>
+      <div class='container mx-auto columns-2'>
+        <div class='mt-20'>
+          <p class='font-lora text-5xl text-zinc-700 pr-5'>Saving lives effortlessly with immunization process.</p>
+          <p class='font-lora text-lg text-slate-600 pr-5 mt-6'>Our commitment to public health means making the
+            immunization process as seamless and effective as possible, ensuring every life is protected with ease.
+            Visit your local health center now! Open 8am-5pm daily</p>
+        </div>
+        <img src='assets/section1.jpeg'></img>
+      </div>
+    </section>
+
+    <section class='container mx-auto my-10 text-center'>
+      <p class='text-5xl font-lora text-[#3A3A3A] mt-12 mb-16'>
+        Infant Vaccination shouldn't be hard. <br />
+        We make it easy.
+      </p>
+      <div class='flex justify-between'>
+        <div
+          class="max-w-sm font-lora bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <img class="rounded-t-lg" src="assets/infant_immunization.jpeg" alt="" />
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-lora tracking-tight text-gray-900 dark:text-white">Immunization Schedule
+                Adherence</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 font-montserrat dark:text-gray-400">Aims to ensure adherence to the
+              recommended immunization
+              schedule.</p>
+            <a href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read more
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="max-w-sm font-lora bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <img class="rounded-t-lg" src="assets/infant_immunization.jpeg" alt="" />
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-lora tracking-tight text-gray-900 dark:text-white">Immunization Schedule
+                Adherence</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 font-montserrat dark:text-gray-400">Aims to ensure adherence to the
+              recommended immunization
+              schedule.</p>
+            <a href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read more
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="max-w-sm font-lora bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <img class="rounded-t-lg" src="assets/infant_immunization.jpeg" alt="" />
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-lora tracking-tight text-gray-900 dark:text-white">Parent Education and
+                Engagement</h5>
+            </a>
+            <p class="mb-3 font-normal font-montserrat text-gray-700 dark:text-gray-400">Aims to educate and engage
+              parents or caregivers in the
+              vaccination process.</p>
+            <a href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read more
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='bg-slate-100 pt-24 pb-8'>
+      <div class='container mx-auto'>
+        <p class='text-center font-lora text-5xl '>Comprehensive design, made for all users.</p>
+        <div class='container mx-auto my-20 columns-2 animate__animated animate__fadeInLeft'>
+          <div>
+            <p class='font-lora text-5xl text-zinc-700 pr-5'>Saving lives effortlessly with simplified immunization
+              process.</p>
+            <p class='font-lora text-lg text-slate-600 pr-5 mt-6'>Visit your local health center now! Open 8am-5pm daily
+            </p>
+          </div>
+          <img src='assets/section1.jpeg'></img>
+        </div>
+        <div class='container mx-auto my-40 columns-2 animate__animated animate__fadeInRight'>
+          <img src='assets/section1.jpeg'></img>
+          <div>
+            <p class='font-lora text-5xl text-zinc-700 text-end pr-5'>Saving lives effortlessly with immunization
+              process.</p>
+            <p class='font-lora text-lg text-slate-600 text-end pr-5 mt-6'>Visit your local health center now! Open
+              8am-5pm daily</p>
+          </div>
+
+        </div>
+        <div class='container mx-auto mt-40 mb-32 columns-2  animate__animated animate__fadeInLeft'>
+          <div>
+            <p class='font-lora text-5xl text-zinc-700 pr-5'>Saving lives effortlessly with immunization process.</p>
+            <p class='font-lora text-lg text-slate-600 pr-5 mt-6'>Visit your local health center now! Open 8am-5pm daily
+            </p>
+          </div>
+          <img src='assets/section1.jpeg'></img>
+        </div>
+      </div>
+    </section>
+
+    <section class='container mx-auto my-10'>
+      <div class='columns-2'>
+        <div class='mt-28'>
+          <p class='text-5xl font-lora text-[#3A3A3A]'>No computer? Do not worry! We got you covered.</p>
+          <p class='font-montserrat mt-5 text-slate-600'>We understand that not everyone has access to computer, but
+            that shouldn't hold you back. We've made sure to provide alternative solution so you can still fully
+            participate and engage without any barriers.
+            Access using your mobile phones now.</p>
+        </div>
+        <img src='assets/phone_landing.png'></img>
+      </div>
+    </section>
+
+  </main>
+  <footer class='bg-[#034A46]'>
+    <div class='flex justify-between container mx-auto pt-28 pb-24'>
+      <div class=''>
+        <p class='text-white font-montserrat text-base'>Have a question?</p>
+        <p class='text-white font-montserrat text-base mt-8'>carepathac@gmail.com</p>
+        <p class='text-white font-montserrat text-base mt-2'>(+63) 942-9921-383</p>
+        <div class='mt-6 gap-8 space-x-4'>
+          <i class="fa-brands fa-xl fa-square-facebook text-white hover:text-blue-600"></i>
+          <i class="fa-brands fa-xl fa-facebook-messenger text-white hover:text-sky-300"></i>
+          <i class="fa-brands fa-xl fa-square-x-twitter  text-white hover:text-black"></i>
+          <i class="fa-solid fa-xl fa-earth-americas text-white hover:text-sky-600"></i>
+        </div>
+      </div>
+      <div class=''>
+        <p class='text-white font-montserrat text-base'>Location: </p>
+        <p class='text-white font-montserrat text-base mt-8'>Angeles City Hall, Pulung Maragul</p>
+        <p class='text-white font-montserrat text-base mt-2'>Brgy. Lourdes Northwest Health Center</p>
+        <p class='text-white font-montserrat text-base mt-2'>Brgy. Ninoy Aquino Health Center</p>
+        <p class='text-white font-montserrat text-base mt-2'>Brgy. Salapungan Health Center</p>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1528.9727396272724!2d120.6077845365928!3d15.165366371056734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396edf7f7b8579f%3A0x9733461582c6fd33!2sAngeles%20City%20Hall!5e0!3m2!1sen!2sph!4v1709015597976!5m2!1sen!2sph"
+          width="700" height="400" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>

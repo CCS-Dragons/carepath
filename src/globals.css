@@ -1,0 +1,26 @@
+body{
+    background-color: #F6F3EB;
+}
+
+.hoverButton:hover{
+    background-color:#355314 !important;
+  }
+  
+  .nature200:hover{
+    color:#355314 !important;
+  }
+  
+  .hero_banner{
+    clip-path: circle(80.0% at 50% 135%);
+    width: 100%;
+    height: auto;
+  }
+  
+  .enlarge-on-hover img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .enlarge-on-hover img:hover {
+    transform: scale(1.2);
+  }
+  
