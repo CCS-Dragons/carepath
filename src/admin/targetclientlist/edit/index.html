@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../../output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/2eead9cc17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    </link>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../../../assets/logo.png">
+    </link>
+    <link href="../../../globals.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <title>Carepath</title>
+</head>
+
+<body>
+    <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform" aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+            <div class='flex justify-between'>
+                <a class="flex items-center ps-2.5 mb-5">
+                    <img src="../../../assets/logo.png" class="h-6 me-3 sm:h-7" alt="Carepath Logo" />
+                    <span
+                        class="self-center text-xl font-semibold whitespace-nowrap font-montserrat text-green-800 dark:text-white">Carepath</span>
+                </a>
+            </div>
+            <ul class="space-y-2 font-medium">
+                <li>
+                    <a href="../../"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-chart-line"></i>
+                        <span class="ms-3 text-gray-700 font-montserrat text-sm">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-border-all"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Target
+                            Client List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../history/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-clock-rotate-left"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Vaccination
+                            History</span>
+                    </a>
+                </li>
+                <hr />
+                <p class='font-montserrat text-sm'>Maintenance</p>
+                <li>
+                    <a href="../../vaccine/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-syringe"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Vaccine
+                            List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../barangay/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-house"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Barangay
+                            List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../user/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-users"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">User
+                            List</span>
+                    </a>
+                </li>
+                <hr />
+                <p class='text-sm font-montserrat'>Notifications</p>
+                <li>
+                    <a href="../../upcoming/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-flag"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Upcoming
+                            Vaccination</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../missed/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-calendar-xmark fa-lg"></i>
+                        <span class="flex-1 ms-3 text-gray-700  whitespace-nowrap font-montserrat text-sm">Missed
+                            Vaccination</span>
+                    </a>
+                </li>
+                <hr />
+                <p class='text-sm font-montserrat'>QR Code</p>
+                <li>
+                    <a href="../../scan/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-qrcode"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Add Infant
+                            QR Code</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <main>
+        <div class="container mx:auto">
+            <form>
+                <div class="mt-10 ms-48 rounded-xl" style="border: 1px solid black; padding: 3rem 16rem; ">
+                    <h1 class="text-4xl text-center font-bold font-montserrat">Edit Infant Record</h1>
+                    <div class="my-10 ml-68 grid gap-6 md:grid-cols-3">
+                        <div>
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full
+                                name: <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" id="name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                value="Kane Erryl Castillano" required />
+                        </div>
+                        <div>
+                            <label for="barangay"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Barangay: <span
+                                    class="text-red-500">*</span>
+                            </label>
+                            <select id="barangay"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option>Enter Barangay</option>
+                                <option value="Camp Tinio">Camp Tinio</option>
+                                <option value="Lourdes Northwest">Lourdes Northwest</option>
+                                <option selected value="Salapungan">Salapungan</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="sex" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sex:
+                            </label>
+                            <div class="flex align-middle mt-4">
+                                <div class="flex items-center me-4">
+                                    <input checked id="male-radio" type="radio" value="M" name="sex"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                    <label for="male-radio"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">M</label>
+                                </div>
+                                <div class="flex items-center me-4">
+                                    <input id="female-radio" type="radio" value="F" name="sex"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                    <label for="female-radio"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">F</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="weight"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Weight
+                                (kg): <span class="text-red-500">*</span></label>
+                            <input type="number" id="weight"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                value="7" required />
+                        </div>
+                        <div>
+                            <label for="length"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Length
+                                (cm): <span class="text-red-500">*</span></label>
+                            <input type="number" id="length"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                value="54" required />
+                        </div>
+
+                        <div>
+                            <label for="birthdate"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Birthdate: <span
+                                    class="text-red-500">*</span></label>
+                            <input type="date" id="birthdate"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                value="2024-03-08" required />
+                        </div>
+                    </div>
+                    <p class="text-2xl font-montserrat">Parents Information</p>
+                    <div class="mt-3 ml-68 grid gap-6 mb-6 md:grid-cols-3">
+                        <div>
+                            <label for="mother_name"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mother's name:
+                            </label>
+                            <input type="text" id="mother_name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                value="Mary Jessica Castillano" required />
+                        </div>
+                        <div>
+                            <label for="father_name"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Father's name:
+                            </label>
+                            <input type="text" id="father_name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                value="Jonilo Castillano" required />
+                        </div>
+                        <div class="mb-5">
+                            <label for="contact_number"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone
+                                number:</label>
+                            <div class="relative">
+                                <div
+                                    class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
+                                        <path
+                                            d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z" />
+                                    </svg>
+                                </div>
+                                <input type="text" id="contact_number" aria-describedby="helper-text-explanation"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="09429903401" required />
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-2xl font-montserrat">Complete Address</p>
+                    <textarea id="message" rows="4"
+                        class="mt-3 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Angeles University Foundation, Angeles City, Pampanga"></textarea>
+                    <div class="flex justify-center mt-10">
+                        <a href="../../targetclientlist/">
+                            <button type="button"
+                                class="text-white bg-gray-500 w-32 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Cancel</button>
+                        </a>
+                        <button type="button"
+                            class="focus:outline-none text-white w-32 bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>

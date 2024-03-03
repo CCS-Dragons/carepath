@@ -2,8 +2,12 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
-  "./node_modules/flowbite/**/*.js"],
-  
+    "./src/admin/targetclientlist/**/*.{html,js}",
+    "./src/admin/targetclientlist/**/*.{html,js}",
+    "./src/admin/targetclientlist/**/*.{html,js}",
+    "./node_modules/flowbite/**/*.js",
+  ],
+
   theme: {
     container: {
       center: true,
@@ -11,21 +15,20 @@ module.exports = {
     extend: {
       colors: {
         nature: {
-          100: '#F6F3EB',
+          100: "#F6F3EB",
         },
       },
       fontFamily: {
-        'montserrat': ['Montserrat', 'sans-serif'],
-        'lora': ['Lora', 'serif'],
-        'poppins': ['Poppins'],
-        'raleway': ['Raleway', 'sans-serif'],
+        montserrat: ["Montserrat", "sans-serif"],
+        lora: ["Lora", "serif"],
+        poppins: ["Poppins"],
+        raleway: ["Raleway", "sans-serif"],
       },
     },
   },
   plugins: [
-    require('flowbite/plugin')({
+    require("flowbite/plugin")({
       charts: true,
-    })
+    }),
   ],
-}
-
+};
