@@ -46,7 +46,7 @@
                 </li>
                 <li>
                     <a href="../"
-                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        class="flex items-center p-3 rounded-lg bg-[#F6F3EB] w-80 shadow-inner dark:text-white focus:outline-none group">
                         <i class="fa-solid fa-lg fa-border-all"></i>
                         <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Target
                             Client List</span>
@@ -61,32 +61,7 @@
                     </a>
                 </li>
                 <hr />
-                <p class='font-montserrat text-sm'>Maintenance</p>
-                <li>
-                    <a href="../../vaccine/"
-                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
-                        <i class="fa-solid fa-lg fa-syringe"></i>
-                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Vaccine
-                            List</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="../../barangay/"
-                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
-                        <i class="fa-solid fa-lg fa-house"></i>
-                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Barangay
-                            List</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="../../user/"
-                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
-                        <i class="fa-solid fa-lg fa-users"></i>
-                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">User
-                            List</span>
-                    </a>
-                </li>
-                <hr />
+
                 <p class='text-sm font-montserrat'>Notifications</p>
                 <li>
                     <a href="../../upcoming/"
@@ -110,7 +85,7 @@
                     <a href="../../scan/"
                         class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
                         <i class="fa-solid fa-lg fa-qrcode"></i>
-                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Add Infant
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Scan Infant
                             QR Code</span>
                     </a>
                 </li>
@@ -145,12 +120,9 @@
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Barangay: <span
                                     class="text-red-500">*</span>
                             </label>
-                            <select id="barangay"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                <option>Enter Barangay</option>
-                                <option value="Camp Tinio">Camp Tinio</option>
-                                <option value="Lourdes Northwest">Lourdes Northwest</option>
-                                <option value="Salapungan">Salapungan</option>
+                            <input type="text" id="barangay"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                value="Camp Tinio" required disabled readonly />
                             </select>
                         </div>
                         <div>

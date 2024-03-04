@@ -68,7 +68,7 @@
                     <p class='font-montserrat text-sm'>Maintenance</p>
                     <li>
                         <a href="../vaccine/index.html"
-                            class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                            class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group bg-[#F6F3EB] w-80 shadow-inner">
                             <i class="fa-solid fa-lg fa-syringe"></i>
                             <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Vaccine
                                 List</span>
@@ -114,7 +114,8 @@
                         <a href="../scan/index.html"
                             class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
                             <i class="fa-solid fa-lg fa-qrcode"></i>
-                            <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Add Infant
+                            <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Scan
+                                Infant
                                 QR Code</span>
                         </a>
                     </li>
@@ -136,7 +137,7 @@
             <div class="flex justify-end">
                 <a href="../vaccine/create">
                     <button type="button"
-                        class="w-48 2xl:mr-64 mt-20 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5   dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                        class="w-48 2xl:mr-64 mt-8 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5   dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
                         Add Vaccine +
                     </button>
                 </a>
@@ -170,10 +171,10 @@
                                 1
                             </td>
                             <td class="px-6 py-4">
-                                Pneumococcal Conjugate Vaccine
+                                BCG Vaccine
                             </td>
                             <td class="px-6 py-4">
-                                PCV
+                                BCG
                             </td>
                             <td class="py-4">
                                 <form class="w-32">
@@ -194,6 +195,8 @@
                                             class="fa-solid fa-lg fa-trash hover:text-black hover:cursor-pointer ml-3 mt-2.5"></i></button>
                                 </div>
                             </td>
+
+
                         </tr>
                         <tr
                             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -236,10 +239,10 @@
                                 3
                             </td>
                             <td class="px-6 py-4">
-                                BCG Vaccine
+                                Pentavalent Vaccine
                             </td>
                             <td class="px-6 py-4">
-                                BCG
+                                DPT-Hep B-HiB
                             </td>
                             <td class="py-4">
                                 <form class="w-32">
@@ -263,45 +266,140 @@
 
 
                         </tr>
+                        <tr
+                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+
+                            <td class="px-6 py-4">
+                                4
+                            </td>
+                            <td class="px-6 py-4">
+                                Oral Polio Vaccine
+                            </td>
+                            <td class="px-6 py-4">
+                                OPV
+                            </td>
+                            <td class="py-4">
+                                <form class="w-32">
+                                    <select id="countries"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <option selected>Active</option>
+                                        <option value="US">Inactive</option>
+                                    </select>
+                                </form>
+                            </td>
+                            <td class="px-3 py-4 flex mt-3 ">
+                                <div class="flex">
+                                    <a href="../vaccine/view/"><i
+                                            class="fa-solid fa-lg fa-eye hover:text-black hover:cursor-pointer mr-3"></i></a>
+                                    <a href="../vaccine/edit/"><i
+                                            class="fa-solid fa-lg fa-pencil  hover:text-black hover:cursor-pointer"></i></a>
+                                    <button data-modal-target="popup-modal" data-modal-toggle="popup-modal"><i
+                                            class="fa-solid fa-lg fa-trash hover:text-black hover:cursor-pointer ml-3 mt-2.5"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr
+                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+
+                            <td class="px-6 py-4">
+                                5
+                            </td>
+                            <td class="px-6 py-4">
+                                Innactivated Polio Vaccine
+                            </td>
+                            <td class="px-6 py-4">
+                                IPV
+                            </td>
+                            <td class="py-4">
+                                <form class="w-32">
+                                    <select id="countries"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <option selected>Active</option>
+                                        <option value="US">Inactive</option>
+                                    </select>
+                                </form>
+                            </td>
+                            <td class="px-3 py-4 flex mt-3 ">
+                                <div class="flex">
+                                    <a href="../vaccine/view/"><i
+                                            class="fa-solid fa-lg fa-eye hover:text-black hover:cursor-pointer mr-3"></i></a>
+                                    <a href="../vaccine/edit/"><i
+                                            class="fa-solid fa-lg fa-pencil  hover:text-black hover:cursor-pointer"></i></a>
+                                    <button data-modal-target="popup-modal" data-modal-toggle="popup-modal"><i
+                                            class="fa-solid fa-lg fa-trash hover:text-black hover:cursor-pointer ml-3 mt-2.5"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr
+                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+
+                            <td class="px-6 py-4">
+                                6
+                            </td>
+                            <td class="px-6 py-4">
+                                Pneumococcal Conjugate Vaccine
+                            </td>
+                            <td class="px-6 py-4">
+                                PCV
+                            </td>
+                            <td class="py-4">
+                                <form class="w-32">
+                                    <select id="countries"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <option selected>Active</option>
+                                        <option value="US">Inactive</option>
+                                    </select>
+                                </form>
+                            </td>
+                            <td class="px-3 py-4 flex mt-3 ">
+                                <div class="flex">
+                                    <a href="../vaccine/view/"><i
+                                            class="fa-solid fa-lg fa-eye hover:text-black hover:cursor-pointer mr-3"></i></a>
+                                    <a href="../vaccine/edit/"><i
+                                            class="fa-solid fa-lg fa-pencil  hover:text-black hover:cursor-pointer"></i></a>
+                                    <button data-modal-target="popup-modal" data-modal-toggle="popup-modal"><i
+                                            class="fa-solid fa-lg fa-trash hover:text-black hover:cursor-pointer ml-3 mt-2.5"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr
+                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+
+                            <td class="px-6 py-4">
+                                7
+                            </td>
+                            <td class="px-6 py-4">
+                                Measles, Mumps, Rubella
+                            </td>
+                            <td class="px-6 py-4">
+                                MMR
+                            </td>
+                            <td class="py-4">
+                                <form class="w-32">
+                                    <select id="countries"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <option selected>Active</option>
+                                        <option value="US">Inactive</option>
+                                    </select>
+                                </form>
+                            </td>
+                            <td class="px-3 py-4 flex mt-3 ">
+                                <div class="flex">
+                                    <a href="../vaccine/view/"><i
+                                            class="fa-solid fa-lg fa-eye hover:text-black hover:cursor-pointer mr-3"></i></a>
+                                    <a href="../vaccine/edit/"><i
+                                            class="fa-solid fa-lg fa-pencil  hover:text-black hover:cursor-pointer"></i></a>
+                                    <button data-modal-target="popup-modal" data-modal-toggle="popup-modal"><i
+                                            class="fa-solid fa-lg fa-trash hover:text-black hover:cursor-pointer ml-3 mt-2.5"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
                     </tbody>
                 </table>
-                <nav class="flex items-center p-4 flex-column flex-wrap md:flex-row justify-between pt-4"
-                    aria-label="Table navigation">
-                    <span
-                        class="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">Showing
-                        <span class="font-semibold text-gray-900 dark:text-white">1-10</span> of <span
-                            class="font-semibold text-gray-900 dark:text-white">50</span></span>
-                    <ul class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
-                        <li>
-                            <a href="#"
-                                class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center justify-center px-3 h-8 leading-tight text-green-500 bg-green-50 border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                        </li>
-                        <li>
-                            <a href="#" aria-current="page"
-                                class="flex items-center justify-center px-3 h-8 text-gray-500 border border-gray-300 bg-white hover:bg-blue-100  dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
-                        </li>
-                    </ul>
-                </nav>
+
                 <div id="popup-modal" tabindex="-1"
                     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
                     <div class="relative p-4 w-full max-w-md max-h-full">

@@ -92,7 +92,7 @@
           </button>
         </div>
         <div class="p-4 md:p-5">
-          <form class="space-y-4" action="admin/index.html">
+          <form class="space-y-4" onsubmit="return login()">
             <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                 username</label>
@@ -376,6 +376,24 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function login() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username === "administrator" && password === "admin123") {
+        window.location.href = "admin";
+        return false;
+      } else if (username === "salapunganHC" && password === "salapungan123") {
+        window.location.href = "users";
+        return false;
+      } else {
+        alert("Invalid username or password");
+        return false;
+      }
+    }
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>

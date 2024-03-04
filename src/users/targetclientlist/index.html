@@ -42,14 +42,14 @@
                 <ul class="space-y-2 font-medium">
                     <li>
                         <a href="../index.html"
-                            class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                            class="flex items-center  p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
                             <i class="fa-solid fa-lg fa-chart-line"></i>
                             <span class="ms-3 text-gray-700 font-montserrat text-sm">Dashboard</span>
                         </a>
                     </li>
                     <li>
                         <a href="../targetclientlist/index.html"
-                            class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                            class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group bg-[#F6F3EB] w-80 shadow-inner ">
                             <i class="fa-solid fa-lg fa-border-all"></i>
                             <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Target
                                 Client List</span>
@@ -65,32 +65,7 @@
                         </a>
                     </li>
                     <hr />
-                    <p class='font-montserrat text-sm'>Maintenance</p>
-                    <li>
-                        <a href="../vaccine/index.html"
-                            class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
-                            <i class="fa-solid fa-lg fa-syringe"></i>
-                            <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Vaccine
-                                List</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../barangay/index.html"
-                            class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
-                            <i class="fa-solid fa-lg fa-house"></i>
-                            <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Barangay
-                                List</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../user/index.html"
-                            class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
-                            <i class="fa-solid fa-lg fa-users"></i>
-                            <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">User
-                                List</span>
-                        </a>
-                    </li>
-                    <hr />
+
                     <p class='text-sm font-montserrat'>Notifications</p>
                     <li>
                         <a href="../upcoming/index.html"
@@ -114,7 +89,8 @@
                         <a href="../scan/index.html"
                             class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
                             <i class="fa-solid fa-lg fa-qrcode"></i>
-                            <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Add Infant
+                            <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Scan
+                                Infant
                                 QR Code</span>
                         </a>
                     </li>
@@ -134,17 +110,7 @@
     <main>
         <div class="container">
             <div class='flex ml-56 mt-10'>
-                <form class='mr-5'>
-                    <label for="barangay"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Barangay</label>
-                    <select id="barangay"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                        <option selected>Choose a barangay</option>
-                        <option value="Camp Tinio">Camp Tinio</option>
-                        <option value="Lourdes Northwest">Lourdes Northwest</option>
-                        <option value="Salapungan">Salapungan</option>
-                    </select>
-                </form>
+
 
                 <form>
                     <label for="year" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Year</label>
@@ -189,10 +155,6 @@
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-white uppercase bg-green-700 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-
-                            <th scope="col" class="px-6 py-3">
-                                Barangay
-                            </th>
                             <th scope="col" class="px-6 py-3">
                                 Birth date
                             </th>
@@ -217,10 +179,7 @@
                         <tr
                             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
 
-                            <th scope="row"
-                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Salapungan
-                            </th>
+
                             <td class="px-6 py-4">
                                 March 08, 2024
                             </td>
@@ -236,8 +195,8 @@
                             <td class="px-6 py-4">
                                 Fully Vaccinated
                             </td>
-                            <td class="px-6 py-4 flex justify-between">
-                                <a href="../targetclientlist/view/" class="hover:text-black">
+                            <td class="px-6 py-4 flex">
+                                <a href="../targetclientlist/view/" class="hover:text-black mr-5">
                                     <i class="fa-solid fa-eye fa-lg" class="hover:text-black"></i>
                                 </a>
                                 <a href="../targetclientlist/edit/" class="hover:text-black">
@@ -249,10 +208,7 @@
                         <tr
                             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
 
-                            <th scope="row"
-                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Lourdes Northwest
-                            </th>
+
                             <td class="px-6 py-4">
                                 February 29, 2024
                             </td>
@@ -268,9 +224,9 @@
                             <td class="px-6 py-4">
                                 Not Vaccinated
                             </td>
-                            <td class="px-6 py-4 flex justify-between">
-                                <a href="../targetclientlist/view/" class="hover:text-black">
-                                    <i class="fa-solid fa-eye fa-lg" class="hover:text-black"></i>
+                            <td class="px-6 py-4 flex">
+                                <a href="../targetclientlist/view/" class="hover:text-black mr-5">
+                                    <i class=" fa-solid fa-eye fa-lg" class="hover:text-black"></i>
                                 </a>
                                 <a href="../targetclientlist/edit/" class="hover:text-black">
                                     <i class="fa-solid fa-pencil fa-lg" class="hover:text-black"></i>
@@ -280,10 +236,7 @@
                         <tr
                             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
 
-                            <th scope="row"
-                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Camp Tinio
-                            </th>
+
                             <td class="px-6 py-4">
                                 January 1, 2024
                             </td>
@@ -299,8 +252,8 @@
                             <td class="px-6 py-4">
                                 Partially Vaccinated
                             </td>
-                            <td class="px-6 py-4 flex justify-between">
-                                <a href="../targetclientlist/view/" class="hover:text-black">
+                            <td class="px-6 py-4 flex">
+                                <a href="../targetclientlist/view/" class="hover:text-black mr-5">
                                     <i class="fa-solid fa-eye fa-lg" class="hover:text-black"></i>
                                 </a>
                                 <a href="../targetclientlist/edit/" class="hover:text-black">
@@ -312,10 +265,7 @@
                         <tr
                             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
 
-                            <th scope="row"
-                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Lourdes Northwest
-                            </th>
+
                             <td class="px-6 py-4">
                                 March 01, 2024
                             </td>
@@ -331,8 +281,8 @@
                             <td class="px-6 py-4">
                                 Fully Vaccinated
                             </td>
-                            <td class="px-6 py-4 flex justify-between">
-                                <a href="#" class="hover:text-black">
+                            <td class="px-6 py-4 flex">
+                                <a href="#" class="hover:text-black mr-5">
                                     <i class="fa-solid fa-eye fa-lg" class="hover:text-black"></i>
                                 </a>
                                 <a href="../targetclientlist/edit/" class="hover:text-black">
