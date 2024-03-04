@@ -5,6 +5,7 @@ module.exports = {
     "./src/admin/targetclientlist/**/*.{html,js}",
     "./src/admin/targetclientlist/**/*.{html,js}",
     "./src/admin/targetclientlist/**/*.{html,js}",
+    "./src/admin/scan/*.{html,js}",
     "./node_modules/flowbite/**/*.js",
   ],
 

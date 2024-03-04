@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/2eead9cc17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    </link>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
+    </link>
+    <link href="../../globals.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <title>Carepath</title>
+</head>
+
+<body>
+    <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform" aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+            <div class='flex justify-between'>
+                <a class="flex items-center ps-2.5 mb-5">
+                    <img src="../../assets/logo.png" class="h-6 me-3 sm:h-7" alt="Carepath Logo" />
+                    <span
+                        class="self-center text-xl font-semibold whitespace-nowrap font-montserrat text-green-800 dark:text-white">Carepath</span>
+                </a>
+            </div>
+            <ul class="space-y-2 font-medium">
+                <li>
+                    <a href="../"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-chart-line"></i>
+                        <span class="ms-3 text-gray-700 font-montserrat text-sm">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../targetclientlist/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-border-all"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Target
+                            Client List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../history/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-clock-rotate-left"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Vaccination
+                            History</span>
+                    </a>
+                </li>
+                <hr />
+                <p class='font-montserrat text-sm'>Maintenance</p>
+                <li>
+                    <a href="../vaccine/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-syringe"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Vaccine
+                            List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../barangay/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-house"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Barangay
+                            List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../user/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-users"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">User
+                            List</span>
+                    </a>
+                </li>
+                <hr />
+                <p class='text-sm font-montserrat'>Notifications</p>
+                <li>
+                    <a href="../upcoming/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-flag"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Upcoming
+                            Vaccination</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../missed/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-calendar-xmark fa-lg"></i>
+                        <span class="flex-1 ms-3 text-gray-700  whitespace-nowrap font-montserrat text-sm">Missed
+                            Vaccination</span>
+                    </a>
+                </li>
+                <hr />
+                <p class='text-sm font-montserrat'>QR Code</p>
+                <li>
+                    <a href="../scan/"
+                        class="flex items-center p-3 rounded-lg dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                        <i class="fa-solid fa-lg fa-qrcode"></i>
+                        <span class="flex-1 ms-3 text-gray-700 whitespace-nowrap font-montserrat text-sm">Add Infant
+                            QR Code</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full">
+            <hr>
+            <a href="../../"
+                class="flex w-full items-center p-3 justify-center dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                <i class="fa-solid  fa-lg fa-sign-out"></i>
+                <span class="ms-3  text-gray-700  font-montserrat text-sm">Logout</span>
+            </a>
+        </div>
+    </aside>
+    <main>
+
+        <div class="container mx:auto flex justify-center" style="margin-top: 6rem;">
+
+            <div class="ml-72 ">
+                <select id="cameraSelect" class="rounded-xl" style="margin-left: 10rem; margin-bottom: 1rem;"></select>
+                <video id="preview" willReadFrequently></video>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+    <script>
+        let scanner;
+        Instascan.Camera.getCameras().then(function (cameras) {
+            if (cameras.length > 0) {
+                scanner = new Instascan.Scanner({ video: document.getElementById('preview'), mirror: false });
+                scanner.addListener('scan', function (content) {
+                    processQRCodeContent(content);
+                });
+                let select = document.getElementById('cameraSelect');
+                cameras.forEach(function (camera, index) {
+                    let option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = camera.name;
+                    select.appendChild(option);
+                });
+                scanner.start(cameras[0]);
+                select.addEventListener('change', function () {
+                    scanner.start(cameras[select.value]);
+                });
+            } else {
+                console.error('No cameras found.');
+            }
+        }).catch(function (e) {
+            console.error(e);
+        });
+
+        function processQRCodeContent(content) {
+            let dataPairs = content.split('&');
+            let result = {};
+
+            dataPairs.forEach(pair => {
+                let [key, value] = pair.split('=');
+
+
+                if (value !== '') {
+                    switch (key) {
+                        case '1':
+                            result['name'] = value;
+                            break;
+                        case '2':
+                            result['birth_date'] = value;
+                            break;
+                        case '3':
+                            result['gender'] = value;
+                            break;
+                        case '4':
+                            result['weight'] = value;
+                            break;
+                        case '5':
+                            result['length'] = value;
+                            break;
+                        case '6':
+                            result['father_name'] = value;
+                            break;
+                        case '7':
+                            result['mother_name'] = value;
+                            break;
+                        case '8':
+                            result['contact_number'] = value;
+                            break;
+                    }
+                }
+            });
+
+            let queryString = Object.keys(result).map(key => key + '=' + result[key]).join('&');
+            console.log(queryString);
+            let redirectURL = '../targetclientlist/create/?' + queryString;
+
+            window.location.href = redirectURL;
+        }
+    </script>
+</body>
+
+</html>

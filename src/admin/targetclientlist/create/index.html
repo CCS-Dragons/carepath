@@ -116,11 +116,19 @@
                 </li>
             </ul>
         </div>
+        <div class="absolute bottom-0 left-0 w-full">
+            <hr>
+            <a href="../../../"
+                class="flex w-full items-center p-3 justify-center dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
+                <i class="fa-solid  fa-lg fa-sign-out"></i>
+                <span class="ms-3  text-gray-700  font-montserrat text-sm">Logout</span>
+            </a>
+        </div>
     </aside>
 
     <main>
         <div class="container mx:auto">
-            <form>
+            <form id="infantForm">
                 <div class="mt-10 ms-48 rounded-xl" style="border: 1px solid black; padding: 3rem 16rem; ">
                     <h1 class="text-4xl text-center font-bold font-montserrat">Create Infant Record</h1>
                     <div class="my-10 ml-68 grid gap-6 md:grid-cols-3">
@@ -244,6 +252,33 @@
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+
+            // Function to get parameter value from URL
+            const getParamValue = (param) => urlParams.has(param) ? urlParams.get(param) : "";
+
+            // Populate input fields
+            document.getElementById("name").value = getParamValue("name");
+            document.getElementById("birthdate").value = getParamValue("birth_date");
+
+            const gender = getParamValue("gender");
+            if (gender === "m") {
+                document.getElementById("male-radio").checked = true;
+            } else if (gender === "f") {
+                document.getElementById("female-radio").checked = true;
+            }
+
+            document.getElementById("weight").value = getParamValue("weight");
+            document.getElementById("length").value = getParamValue("length");
+            document.getElementById("father_name").value = getParamValue("father_name");
+            document.getElementById("mother_name").value = getParamValue("mother_name");
+            document.getElementById("contact_number").value = getParamValue("contact_number");
+        });
+    </script>
+
 </body>
 
 </html>
