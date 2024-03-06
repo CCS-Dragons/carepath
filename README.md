@@ -15,7 +15,7 @@ Carepath is a blockchain enabled infant immunization registry equipped with an S
 
 <a href="https://drive.google.com/file/d/11bKAWE-Yv0doHZPLh-wQHiY-G1xS79qD/view?usp=sharing">Click here to watch demo!</a>
 
-<h6>Live Canister Link: <a href="https://w24vl-6iaaa-aaaak-afosq-cai.icp0.io"> https://w24vl-6iaaa-aaaak-afosq-cai.icp0.io</a> </h6>
+<h6>Live Canister Link: <a href="https://wt76x-iaaaa-aaaak-afota-cai.icp0.io/"> https://wt76x-iaaaa-aaaak-afota-cai.icp0.io </a> </h6>
 
 <h2>Introduction</h2>
 
