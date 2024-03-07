@@ -95,7 +95,7 @@
         </div>
         <div class="absolute bottom-0 left-0 w-full">
             <hr>
-            <a href="../index.html"
+            <a href="../../index.html"
                 class="flex w-full items-center p-3 justify-center dark:text-white focus:outline-none group hover:bg-gray-100 hover:border-gray-200  dark:hover:bg-gray-700 hover:shadow-inner">
                 <i class="fa-solid  fa-lg fa-sign-out"></i>
                 <span class="ms-3  text-gray-700  font-montserrat text-sm">Logout</span>
@@ -180,7 +180,7 @@
 
             let queryString = Object.keys(result).map(key => key + '=' + result[key]).join('&');
             console.log(queryString);
-            let redirectURL = '../targetclientlist/create/?' + queryString;
+            let redirectURL = '../targetclientlist/create/index.html?' + queryString;
 
             window.location.href = redirectURL;
         }

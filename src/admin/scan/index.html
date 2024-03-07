@@ -204,7 +204,7 @@
 
             let queryString = Object.keys(result).map(key => key + '=' + result[key]).join('&');
             console.log(queryString);
-            let redirectURL = '../targetclientlist/create/?' + queryString;
+            let redirectURL = '../targetclientlist/create/index.html?' + queryString;
 
             window.location.href = redirectURL;
         }
